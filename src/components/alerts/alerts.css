@@ -1,0 +1,18 @@
+.custom-cancel-button {
+    background-color: white !important;
+    border: 1px solid #063BF7 !important;
+    border-radius: 20px !important;  
+    color: #063BF7 !important;
+    
+  }
+
+  .custom-confirm-button {
+    background-color: #063BF7 !important;
+    border: 1px solid  !important;
+    border-radius: 20px !important;  
+    color: #ffffff !important;
+    
+  }
+  .swal2-actions {
+    flex-direction: row-reverse !important;
+  }

@@ -1,0 +1,57 @@
+.MainView {
+  padding: 5% 20% 0% 20%;
+  text-align: start;
+}
+
+.MainView p {
+  margin: 0% 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.MainView span {
+  font-size: 1.2em;
+}
+
+.Form-View {
+  border-radius: 20px;
+  box-shadow: -7px 7px 1px 0px rgb(119, 159, 166);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: whitesmoke;
+}
+
+.view {
+  margin: 4% 0 4% 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.MainView b {
+  font-size: 1.2em;
+}
+
+.button_group {
+  width: 25%;
+  padding-top: 12%;
+  padding-left: 15%;
+  height: 25%;
+}
+
+@media screen and (min-width: 1280px) {
+  .MainView{
+   padding-bottom: 1rem;
+  }
+
+ }
+
+ /* Estilos para el tema oscuro */
+.MainView.dark-mode{
+  color: white;
+}
+ .Form-View.dark-mode{
+  color: white;
+  background-color: #1f1e24;
+  box-shadow: -7px 7px 1px 0px rgba(0, 0, 0, 0.108)
+ }

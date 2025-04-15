@@ -1,0 +1,156 @@
+  .Table-container {
+    cursor: default;
+    margin-top: 2rem;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 7px 0px 1px 0px rgb(119, 159, 166);
+  }
+
+  .Table-container caption {
+    width: 100%;
+    text-align: start;
+    font-size: x-large;
+    font-weight: bolder;
+  }
+
+  .Table-container .cap2 {
+    text-align: end;
+    position: relative;
+    bottom: 20px;
+  }
+
+  .Table-container th,
+  .Table-container td {
+    padding: 1rem;
+  }
+
+  .Table-container tr {
+    border-bottom: rgb(202, 202, 202) solid;
+    border-top: rgb(202, 202, 202) solid;
+  }
+
+  .Table-container tr:last-child {
+    border-bottom: none;
+    border-top: none;
+  }
+
+  .Table-container  tbody tr:hover {
+    background-color: #aec6cb;
+  }
+  .CourseStatus {
+    color: #4F5AED;
+    background-color: #dcdeed;
+    width: 100px;
+    margin-left: 25%;
+    border-radius: 30px;
+  }
+  .main {
+    padding: 0 4% 2% 4%;
+    background-color: #AEC6CB;
+    
+  }
+  .hidden{
+    display: none;
+  }
+
+
+  .Search-input{
+    border-radius: 5px;
+    text-align:left;
+    background-color: #f6f6f7;
+    padding-left: 30px;
+    height: 5vh;
+ 
+  }
+
+  .Search-input::placeholder {
+    font-size: 12px; 
+    text-align:left;
+    color:  #6E6E71;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    line-height: normal;
+    font:inherit;
+
+}
+
+.Search-container {
+  z-index: 99;
+  margin-top: 2rem;
+  margin-right: 6rem;
+    position: relative;
+    display: inline-block;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 54%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+
+/* Estilos para el tema oscuro */
+.main-dark{
+  background-color: #0d0d0d;
+  padding: 0 4% 2% 4%;
+ 
+}
+.main-dark .Table-container {
+  background-color: #1f1e24;
+  color: #ffffff; 
+  box-shadow: none;
+}
+.main-dark .Table-container  tbody tr:hover {
+ 
+  background-color:  #121212;
+}
+
+.main-dark .CourseStatus {
+  color: #ffffff; 
+  background-color: #666666; 
+
+}
+
+.main-dark .Search-input {
+  background-color: #666666; 
+}
+
+.main-dark .Search-input::placeholder {
+  color: #b0b0b0; 
+}
+
+.main-dark #viewBtn{
+  background-color: #2c2b2f;
+}
+
+.main-dark #deleteBtn{
+  background-color: #2d2842;
+}
+
+.main-dark #editBtn{
+  background-color: #302e39;
+}
+.main-dark #create-btn{
+  background-color: #1c124c;
+}
+.main-dark #viewBtn:hover{
+  scale: 1.2;
+}
+
+.main-dark #deleteBtn:hover{
+  scale: 1.2;
+}
+
+.main-dark #editBtn:hover{
+  scale: 1.2;
+}
+.main-dark #create-btn:hover{
+  scale: 1.2;
+}
+
+

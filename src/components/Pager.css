@@ -1,0 +1,36 @@
+.Btn {
+    cursor: pointer;
+    padding: 10px;
+    background-color: transparent;
+    border: transparent;
+}
+
+.Pager {
+    display: flex;
+    cursor: default;
+    justify-content: end;
+    gap: 15px;
+}
+
+.LimitSel:focus-within{
+    border-radius: 5px;
+   box-shadow: 1px 1px 0 0 #679ae3;
+}
+
+.LimitSel {
+    cursor: pointer;
+    background: transparent;
+    margin-right: 0.5em;
+    padding: 0.3em;
+    border-radius: 5px; 
+    color: #000000;
+  }
+
+.Rotate {
+  transform: scale(-1);
+  
+}
+
+.main-dark .Pager {
+filter: invert(100%);
+}

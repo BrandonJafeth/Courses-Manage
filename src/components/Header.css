@@ -1,0 +1,24 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #779FA6;
+    align-items: center;
+    font-size: x-large;
+    
+}
+
+@media screen and (min-width: 1280px) {
+    .Header{
+    
+        max-height: 9vh;
+    }
+   }
+
+   .Header-dark {
+    display: flex;
+    justify-content: space-between;
+    background-color: #26282efd;
+    align-items: center;
+    font-size: x-large;
+    color: white;
+}

@@ -1,0 +1,52 @@
+.cancelButton{
+    border:2px solid #45939E ;
+    background-color: #ffffff ;
+    color: #063BF7;
+    border-radius: 20px;  
+    padding: 0px 30px 0px 30px;
+  }
+  
+  .cancelButton:hover {
+    box-shadow: 0px 0px 10px #000000;
+  }
+    
+  .sendButton {
+    border: 2px solid #3F8C88 ;
+    background-color: #3F8C88 ;
+    color: #ffffff;
+    border-radius: 20px;  
+    padding: 0px 30px 0px 30px;
+    }
+    
+    .sendButton:hover {
+      box-shadow: 0px 0px 10px #000000;
+    }
+    
+    .custom-cancel-button {
+      background-color: white !important;
+      border: 1px solid #063BF7 !important;
+      border-radius: 20px !important;  
+      color: #063BF7 !important;
+      
+    }
+
+    .custom-confirm-button {
+      background-color: #063BF7 !important;
+      border: 1px solid  !important;
+      border-radius: 20px !important;  
+      color: #ffffff !important;
+      
+    }
+    .swal2-actions {
+      flex-direction: row-reverse !important;
+    }
+  
+    .dark-mode .cancelButton{
+      border: solid 1px #063643e4;
+      color: #000000;
+    }
+    .dark-mode .sendButton{
+      background-color: #5f93be;
+      border: solid 1px #ffffff;
+      color: #ffffff;
+    }

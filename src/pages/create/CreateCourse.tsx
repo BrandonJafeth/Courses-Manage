@@ -7,12 +7,16 @@ import { useContext, useState } from "react";
 import courseSchema from "../../validations/courseSchema";
 import { useSubmitCourse } from "../../Hooks/useSubmitCourse";
 import ThemeContext from "../../Context/ThemeContext";
+import { z } from "zod";
+
+// Create a type that matches the schema for form handling
+type CourseFormValues = z.infer<typeof courseSchema>;
 
 function CreateCourse() {
 
   const {darkMode} = useContext(ThemeContext);
 
-  const { register, handleSubmit, formState: { errors } , setValue } = useForm<Course>({
+  const { register, handleSubmit, formState: { errors } , setValue } = useForm<CourseFormValues>({
     resolver: zodResolver(courseSchema)
   });
 
@@ -26,16 +30,18 @@ function CreateCourse() {
     }
   };
   
-
   const onSubmit = useSubmitCourse();
+
+  const handleFormSubmit = (data: CourseFormValues) => {
+    onSubmit(data as unknown as Course);
+  };
 
   return (
     <>
-
       <div className={`body-Form ${darkMode ? 'dark-mode' : ''}`}>
         <p>Add New Course</p>
 
-        <form className={`Form-Style ${darkMode ? 'dark-mode' : ''}`} onSubmit={handleSubmit(onSubmit)}>
+        <form className={`Form-Style ${darkMode ? 'dark-mode' : ''}`} onSubmit={handleSubmit(handleFormSubmit)}>
           <div className="input-group">
             <label htmlFor="name">Course Name</label>
             <input type="text" id="name" {...register("name")} />
@@ -100,7 +106,6 @@ function CreateCourse() {
             )}
           </div>
 
-       
           <div className="button-group">
             <ButtonCancel Title="Cancel"/>
             <ButtonAcept
